@@ -59,7 +59,6 @@ button.btn:hover,button.btn:focus{background:#000;color:#fff;outline:none;box-sh
 
 /*Compontent CSS*/
 .card-img-overlay {
-    content: '';
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -68,9 +67,21 @@ button.btn:hover,button.btn:focus{background:#000;color:#fff;outline:none;box-sh
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color:rgba(24, 24, 24, 0.5);
+	background-color:rgba(0, 0, 0, 0.5);
+    border: none;
   }
-.bnr-home-img-overlay {width: full; height:200px;}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/white.jpeg");
+    height: 200px;
+    margin-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home-p1 {margin: 5% 10% ;text-align: center;}
+.home-p2 {margin: 5% 20% ;text-align: center;}
+.bnr-home-img-overlay {width: full; height:200px; border: none;}
 .creatorImg img{width:100%;}
 .creators{position:relative;}
 .creatorIcon{margin:-40px auto 0;display:table;position:absolute;left:0;right:0;width:65px;}
@@ -582,6 +593,10 @@ textarea.form-input{height:155px;}
 
 
 /*Responsive*/
+@media (min-width:1400px){
+.
+}
+
 @media (min-width:992px){
 .faq .collapse:not(.show){display:block!important;}
 .accordion-header{display:none!important;}
